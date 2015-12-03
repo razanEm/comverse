@@ -1,0 +1,441 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	font-size: 14px;
+}
+
+/********************** header style **************************/
+header{
+	width: 100%;
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	background: white;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+nav{
+	float: left;
+	position: relative;
+	padding-top: 35px;
+}
+
+nav > ol > li > a{
+	color: #737373;
+}
+
+.login{
+	float: right;
+	padding-top: 10px;
+}
+
+.login > select, .login > a{
+	color: #737373;
+}
+.select-lang{
+	border: none;
+}
+
+ul{
+	display: inline-flex;
+	list-style-type: none;
+	float: right;
+}
+
+.container{
+    width: 940px;
+	margin: 0 auto;
+}
+
+.devider{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+ ol {
+	list-style-type: none;
+	display: -webkit-box;
+}
+
+ol > a{
+	text-decoration: blink;
+	color: black;
+}
+
+#comverse-logo{
+	float: left;
+}
+
+.search-box{
+	border-radius: 7px;
+	width: 122px;
+}
+.search-form{
+	float: right;
+	padding-top: 20px;
+}
+
+.search-form button{
+	border: none;
+	background-color: transparent;
+	position: relative;
+	right: 28px;
+	top: 1px;
+}
+/**********************End - header style **************************/
+
+/********************** first section style **************************/
+#first-section{
+	background-image: url(../img/slide-bg-complexity.jpg);
+	height: 540px;
+	width: 100%;
+	background-size: cover;
+	color: white;
+}
+
+#first-h1{
+	padding-top: 80px;
+}
+
+h1{
+	font-weight: 100;
+	font-size: 36px;
+	line-height: 1.1em;
+	margin-bottom: 0.2em;
+}
+
+h3{
+	font-weight: 100;
+}
+
+.section1-boxes{
+	width: 300px;
+	height: 170px;
+	float: left;
+	border-radius: 7px;
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+h2{
+	font-size: 24px;	
+	font-weight: 100;
+	padding-left: 10px;
+}
+
+.section1-boxes:hover{
+	opacity: 1;
+}
+
+.learn-btn, .sol-btn{
+	color: white;
+	background-color: #2290C8;
+	width: 175px;
+	padding: 10px;
+	border-radius: 7px;
+	border: none;
+	text-align: left;
+}
+.sol-btn{
+	position: relative;
+	top: 65px;
+}
+.learn-btn:hover,.sol-btn:hover{
+	background-color: #63B8EE;
+	cursor: pointer;
+}
+
+.learnMoreArrow{
+	float: right;
+}
+
+.carousel > a > li {
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	padding: 3px;
+	border-radius: 2px;
+	margin-left: 5px;
+}
+
+.carousel {
+	-webkit-padding-start: 0px;
+	margin-bottom: 50px;
+}
+
+.left, .middle{
+	margin-right: 20px;
+}
+
+.left{
+	background-color: #EA0094;
+}
+
+.middle{
+	background-color: #6AC43D;
+}
+
+.right{
+	background-color: #FF7519;
+}
+
+.more{
+	padding-left: 10px;
+	color: white;
+}
+
+/**/
+#second-section{
+	background-color: #50AED0;
+	width: 100%;
+	height: 350px;
+	text-align: center;
+}
+
+#second-section > div > h1, #third-section > div > h1, #success-stories-section > div > h1{
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 2.5em;
+}
+
+a{
+	text-decoration: none;
+}
+
+#second-section > div > ul > li > a{
+	color: white;
+	position: relative;
+	top: 50px;
+}
+
+#second-section > div > ul > li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.solutions-list{
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 30px;
+}
+
+#business{
+	background-image: url(../img/solution_icon_biz-analitics.png);
+}
+
+#customer-experience{
+	background-image: url(../img/solution_icon_diti-cx.png);
+}
+#smart-monetization{
+	background-image: url(../img/solution_icon_smart-money.png);
+}
+#optimization-efficiency{
+	background-image: url(../img/solution_icon_optimize-efficnt.png);
+}
+#choice-control{
+	background-image: url(../img/solution_icon_personal.png);
+}
+#business-transformation{
+	background-image: url(../img/solution_icon_biz-transform.png);
+}
+
+#business:hover{
+	background-image: url(../img/solution_icon_biz-analitics_hover.png);
+}
+
+#customer-experience:hover{
+	background-image: url(../img/solution_icon_diti-cx_hover.png);
+}
+#smart-monetization:hover{
+	background-image: url(../img/solution_icon_smart-money_hover.png);
+}
+#optimization-efficiency:hover{
+	background-image: url(../img/solution_icon_optimize-efficnt_hover.png);
+}
+#choice-control:hover{
+	background-image: url(../img/solution_icon_personal_hover.png);
+}
+#business-transformation:hover{
+	background-image: url(../img/solution_icon_biz-transform_hover.png);
+}
+
+#third-section{
+	background-image: url(../img/news-and-events-bg.jpg);
+	width: 100%;
+	height: 350px;
+	text-align: center;
+	background-size: cover;
+}
+
+.comverse-events{
+	width: 300px;
+	height: 170px;
+	float: left;
+	text-align: left;
+	color: white;
+}
+
+.news, .events{
+	margin-right: 20px;
+}
+
+.comverse-events-box{
+	cursor: pointer;
+	background-color: white;
+	opacity: 0.5;
+	width: 300px;
+	height: 105px;
+	font-size:2em;
+	margin-bottom: 10px;
+}
+
+.comverse-events-box:hover{
+	opacity: 0.9;
+}
+
+h1.events-date{
+	width: 65px;
+	margin: 0 auto;
+	float: left;
+	font-weight: 400;
+	text-align: center;
+	background-color: #50AED0;
+	opacity: 1;
+	color: white;
+	font-size: 24px;
+	border-radius: 3px;
+	margin: 10px;
+}
+
+.event-day{
+	border-bottom-style: dotted;
+	display: block;
+	font-size: 36px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.event-month{
+	font-size: 18px;
+}
+
+.events-p{
+	font-size: 16px;
+	color: black;
+	padding-top: 13px;
+	line-height: 1.3;
+}
+
+.all{
+	color:white;
+}
+
+.all:before{
+	float: left;
+	width: 24px;
+	height: 22px;
+	content: "";
+	margin-right: 5px;
+}
+
+.all-news:before{
+	background: url(../img/eventListIconNews.png) no-repeat 50% 50%;
+
+}
+
+.all-events:before{
+	background: url(../img/eventListIconEvents.png) no-repeat 50% 50%;
+}
+
+.all-press-releases:before{
+	background: url(../img/eventListIconPress.png) no-repeat 50% 50%;
+}
+
+.all-news:hover:before{
+	background: url(../img/eventListIconNews_hover.png) no-repeat 50% 50%;
+}
+
+.all-events:hover:before{
+	background: url(../img/eventListIconEvents_hover.png) no-repeat 50% 50%;
+}
+
+.all-press-releases:hover:before{
+	background: url(../img/eventListIconPress_hover.png) no-repeat 50% 50%;
+}
+
+.all:hover:before{
+	float: left;
+	width: 24px;
+	height: 22px;
+	content: "";
+	margin-right: 5px;
+}
+
+.all:hover{
+	color: black;
+}
+
+#success-stories-section{
+	background-color: #ECECEC;
+	width: 100%;
+	height: 460px;
+	text-align: center;
+	background-size: cover;
+}
+
+#success-stories-section > div > ul{
+	float: left;
+}
+#success-stories-section > div > h1{
+	color: #565656;
+}
+
+
+.success-stories-list > li{
+	display: inline-block;
+	/*width: 35%;*/
+	float: left;
+	margin: 4px;
+	padding: 2px;
+}
+
+.success-stories-right{
+	width: 26%;
+}
+
+blockquote{
+	background-color: white;
+}
+
+blockquote > p{
+	/*background: url(../img/quote-grey.png) no-repeat 50% 50%;*/
+	height: 90px;
+	padding: 15px;
+	border-bottom: 1px solid gray;
+	color: #565656;
+	font-size: 16px;
+}
+
+blockquote > span{
+	background: url(../img/3mob_w108px_X_h95px.jpg) no-repeat 50% 50%;
+}
+
+blockquote > img{
+	float: left;
+	padding: 10px;
+}
+
+.per-details{
+	text-align: left;
+	padding-left: 10px;
+}
+
+.per-details > p > a{
+	color: #50AED0;
+}
