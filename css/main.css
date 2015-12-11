@@ -92,7 +92,7 @@ ol > a{
 	background-image: url(../img/slide-bg-complexity.jpg);
 	height: 540px;
 	width: 100%;
-	background-size: cover;
+		
 	color: white;
 }
 
@@ -394,32 +394,37 @@ h1.events-date{
 }
 #success-stories-section > div > h1{
 	color: #565656;
+	padding-bottom: 0;
 }
 
 
 .success-stories-list > li{
 	display: inline-block;
-	/*width: 35%;*/
+	width: 35%;
 	float: left;
 	margin: 4px;
 	padding: 2px;
+	font-size:12px;
 }
 
 .success-stories-right{
-	width: 26%;
+	width: 26% !important;
 }
 
 blockquote{
 	background-color: white;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	height: 180px;
 }
 
 blockquote > p{
 	/*background: url(../img/quote-grey.png) no-repeat 50% 50%;*/
 	height: 90px;
 	padding: 15px;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #DDDDDD;
 	color: #565656;
-	font-size: 16px;
+	text-align: left;
 }
 
 blockquote > span{
@@ -429,13 +434,40 @@ blockquote > span{
 blockquote > img{
 	float: left;
 	padding: 10px;
+	height: 100px;
+	width: 100px;
 }
 
 .per-details{
 	text-align: left;
 	padding-left: 10px;
+	display: inline-block;
+	float: left;
 }
 
 .per-details > p > a{
 	color: #50AED0;
+}
+
+.per-details > p{
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	padding: 2px;
+}
+
+.per-logo{
+	float: right;
+}
+
+.company-logo {
+	display: inline-block;
+	width: 31%;
+	margin: 0px 5px 0 0;
+	background: #FFF;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.company-logo > img{
+	width: 100%;
 }
