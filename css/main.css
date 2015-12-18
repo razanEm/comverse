@@ -98,7 +98,7 @@ ol > a{
 
 /********************** first section style **************************/
 #first-section{
-	background-image: url(../img/slide-bg-complexity.jpg);
+	background: url(../img/slide-bg-complexity.jpg) no-repeat center center fixed;
 	height: 540px;
 	width: 100%;
 		
@@ -282,7 +282,7 @@ a{
 }
 
 #third-section{
-	background-image: url(../img/news-and-events-bg.jpg);
+	background: url(../img/news-and-events-bg.jpg) no-repeat center center fixed;
 	width: 100%;
 	height: 350px;
 	text-align: center;
@@ -303,8 +303,7 @@ a{
 
 .comverse-events-box{
 	cursor: pointer;
-	background-color: white;
-	opacity: 0.5;
+	background-color: rgba(255,255,255,0.4);
 	width: 300px;
 	height: 105px;
 	font-size:2em;
@@ -312,7 +311,7 @@ a{
 }
 
 .comverse-events-box:hover{
-	opacity: 0.9;
+	background-color: white;
 }
 
 h1.events-date{
@@ -400,7 +399,7 @@ h1.events-date{
 #success-stories-section{
 	background-color: #ECECEC;
 	width: 100%;
-	height: 480px;
+	height: 500px;
 	text-align: center;
 	background-size: cover;
 }
@@ -417,7 +416,7 @@ h1.events-date{
 
 .success-stories-list > li{
 	display: inline-block;
-	width: 35%;
+	width: 38%;
 	float: left;
 	margin: 4px;
 	padding: 2px;
@@ -425,7 +424,7 @@ h1.events-date{
 }
 
 .success-stories-right{
-	width: 26% !important;
+	width: 22% !important;
 }
 
 .success-stories-middle{
@@ -440,7 +439,7 @@ blockquote{
 }
 
 blockquote > p{
-	/*background: url(../img/quote-grey.png) no-repeat 50% 50%;*/
+	font-size: 15px;
 	height: 90px;
 	padding: 15px;
 	border-bottom: 1px solid #DDDDDD;
@@ -452,11 +451,24 @@ blockquote > span{
 	background: url(../img/3mob_w108px_X_h95px.jpg) no-repeat 50% 50%;
 }
 
-blockquote > img{
+.success-stories-left > blockquote > p, .success-stories-right > blockquote > p{
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.person-img{
 	float: left;
 	padding: 10px;
 	height: 100px;
 	width: 100px;
+}
+
+.quote{
+	float: left;
+    padding: 5px;
+    height: 20px;
+    width: 27px;
+    padding-top: 0;
 }
 
 .per-details{
@@ -489,12 +501,18 @@ blockquote > img{
 	text-align: center;
 }
 
+.right-company-logo{
+	width: 46%;
+}
+
 .company-logo > img{
 	width: 100%;
+	height:95px;
 }
 
 .companies{
-
+	margin-top: 5px;
+	width: 102%;
 }
 
 footer{
@@ -505,7 +523,7 @@ footer{
 .f-links{
 	float: left;
 	margin-right: 30px;
-	line-height: 22px;
+	line-height: 22px;   
 }
 
 .f-links > ul{
