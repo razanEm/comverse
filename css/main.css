@@ -44,6 +44,10 @@ nav > ol > li > a:hover{
 	color: #737373;
 	padding-left: 5px;
 }
+
+.login > a:hover{
+	text-decoration: underline;
+}
 .select-lang{
 	border: none;
 }
@@ -688,6 +692,10 @@ footer{
     padding: 0px;
 }
 
-.f-nav-list > li{
+.f-nav-list > li, .f-nav-list > li > a{
 	color: gray;
+}
+
+.f-nav-list > li > a:hover{
+	text-decoration: underline;
 }
