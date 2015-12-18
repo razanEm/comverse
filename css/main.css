@@ -27,13 +27,22 @@ nav > ol > li > a{
 	color: #737373;
 }
 
+nav > ol > li > a:hover{
+	color: #D8D8D8;
+}
+
 .login{
 	float: right;
-	padding-top: 10px;
+    padding-top: 7px;
+}
+
+.login > img{
+	position: absolute;
 }
 
 .login > select, .login > a{
 	color: #737373;
+	padding-left: 5px;
 }
 .select-lang{
 	border: none;
@@ -45,7 +54,7 @@ ul{
 	float: right;
 }
 
-.container{
+.wrapper{
     width: 940px;
 	margin: 0 auto;
 }
@@ -71,7 +80,7 @@ ol > a{
 
 .search-box{
 	border-radius: 7px;
-	width: 122px;
+	width: 128px;
 }
 .search-form{
 	float: right;
@@ -130,7 +139,7 @@ h2{
 	opacity: 1;
 }
 
-.learn-btn, .sol-btn{
+.learn-btn, .sol-btn, .success-stories-btn{
 	color: white;
 	background-color: #2290C8;
 	width: 175px;
@@ -143,7 +152,7 @@ h2{
 	position: relative;
 	top: 65px;
 }
-.learn-btn:hover,.sol-btn:hover{
+.learn-btn:hover,.sol-btn:hover, .success-stories-btn:hover{
 	background-color: #63B8EE;
 	cursor: pointer;
 }
@@ -161,6 +170,9 @@ h2{
 	margin-left: 5px;
 }
 
+.carousel > a > li:hover{
+	background-color: #2E95CA;
+}
 .carousel {
 	-webkit-padding-start: 0px;
 	margin-bottom: 50px;
@@ -185,6 +197,10 @@ h2{
 .more{
 	padding-left: 10px;
 	color: white;
+}
+
+.more:hover{
+	text-decoration: underline;
 }
 
 /**/
@@ -384,13 +400,14 @@ h1.events-date{
 #success-stories-section{
 	background-color: #ECECEC;
 	width: 100%;
-	height: 460px;
+	height: 480px;
 	text-align: center;
 	background-size: cover;
 }
 
 #success-stories-section > div > ul{
 	float: left;
+	padding: 0;
 }
 #success-stories-section > div > h1{
 	color: #565656;
@@ -409,6 +426,10 @@ h1.events-date{
 
 .success-stories-right{
 	width: 26% !important;
+}
+
+.success-stories-middle{
+    margin-top: 16.5px !important;
 }
 
 blockquote{
@@ -470,4 +491,185 @@ blockquote > img{
 
 .company-logo > img{
 	width: 100%;
+}
+
+.companies{
+
+}
+
+footer{
+	height: 350px;
+	background-color: #1E1E1E;
+}
+
+.f-links{
+	float: left;
+	margin-right: 30px;
+	line-height: 22px;
+}
+
+.f-links > ul{
+	display: block;
+	padding: 0;
+	float: none;
+}
+
+.f-links > ul > li > a{
+	color: white;
+}
+
+.f-links > ul > li > a:hover{
+	text-decoration: underline;
+}	
+
+.f-header{
+	font-size: 16px;
+	color:white;
+}
+
+.f-box{
+	float: right;
+	background-color: #3d3d3d;
+    width: 265px;
+	position: relative;
+	height: 350px;
+	padding: 0px 10px;
+}
+
+.latest-blog-posts{
+	border-bottom: 1px solid #6A6A6A;
+}
+
+.f-box-header{
+    color: #4EA7D3;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.f-date{
+	width: 60px;
+	height: 80px;
+	padding: 2px;
+	float: left;
+	margin: 0 10px 0 5px;
+}
+
+.f-day{
+	font-size: 2.6rem;
+	margin: 0;
+	text-align: center;
+	line-height: 2.2rem;
+	font-weight: 400;
+}
+
+.f-month{
+	font-size: 1.4rem;
+	margin-left: 6px;
+	text-align: center;
+}
+
+.latest-blog-posts-text{
+	margin: 0 8px;
+	padding: 1px 5px;
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+.latest-blog-posts-text > p{
+	margin: 0 0 18px 0;
+	line-height: 20px;
+}
+
+
+.latest-blog-posts-content:hover{
+	text-decoration: underline;
+}
+.latest-blog-posts-content{
+	color: white;
+}
+
+.email{
+    width: 200px;
+    line-height: 2.5em;
+    border-radius: 3px;
+    border: none;
+    margin: 0 5px;
+    padding-left: 8px;
+    color: gray;
+    outline: none;
+}
+
+.sign-up{
+    background: #2290C8;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    line-height: 2.4em;
+    margin-left: -27px;
+    padding: 2px 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.social-icons{
+	position: absolute;
+	bottom: 0;
+}
+
+.youtube-icon {
+    background: url(../img/socialMenuIcon-youtube.png) no-repeat;
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 22px;
+}
+
+.twitter-icon {
+    background: url(../img/socialMenuIcon-twitter.png) no-repeat;
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 22px;
+}
+
+.linkedin-icon {
+    background: url(../img/socialMenuIcon-linkdin.png) no-repeat;
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 22px;
+}
+
+.youtube-icon:hover {
+	background: url(../img/socialMenuIcon-youtube_hover.png) no-repeat;
+}
+
+.twitter-icon:hover {
+	background: url(../img/socialMenuIcon-twitter_hover.png) no-repeat;
+}
+
+.linkedin-icon:hover {
+	background: url(../img/socialMenuIcon-linkdin_hover.png) no-repeat;
+}
+
+
+.f-nav{
+    margin-right: 0px;
+    font-size: 14px;
+    width: 401px;
+    height: 20px;
+    float: left;
+    margin-top: 58px;
+    display: inline-block;
+}
+
+.f-nav-list{
+    float: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.f-nav-list > li{
+	color: gray;
 }
