@@ -7,7 +7,7 @@
 <body>
 	<header>
 		<div class = "wrapper">
-			<a id="comverse-logo" href="#"><img src="img/comverse-logo.png" alt="Comverse logo"></a>
+			<a class="comverse-logo" href="#"><img src="img/comverse-logo.png" alt="Comverse logo"></a>
 			<nav>
 				<ol>
 					<li><a href="#">YOUR NEEDS</a></li>
@@ -29,7 +29,8 @@
 				<a href="#">Customer login</a>
 			</div>
 			<form class ="search-form">
-				<input class="search-box" type="text" maxlength="15" />
+				<input class="search-box" type="text"/>
+				<img class = "devider" src="img/divider.png" alt="divider">
 				<button type="submit">
 					<img src="img/searchBtn.png" alt="search button">
 				</button>
@@ -37,9 +38,10 @@
 		</div>
 	</header>
 	 
-	 <section id="first-section">
+	 <section class="first-section">
 	 	<div class="wrapper">
-	 		<h1 id="first-h1">
+	 		<ul></ul>
+	 		<h1 class="first-h1">
 	 		<strong>Free</strong> 
 	 		Your Markets From <br> IT <strong> Complexity</strong></h1>
 	 		<h3>Comverse Policy Studio <br>
@@ -47,7 +49,7 @@
 	 		<button class="learn-btn">LEARN MORE<img class="learnMoreArrow" src="img/btnArrow.png" alt="arrow button"></button>
 
 	 		<ol class="carousel">
-	 			<a href="#"><li></li></a>
+	 			<a href="#"><li class="selected"></li></a>
 	 			<a href="#"><li></li></a>
 	 			<a href="#"><li></li></a>
 	 			<a href="#"><li></li></a>
@@ -69,22 +71,22 @@
 	 		</ul>
 	 	</div>
 	 </section>
-	 <section id="second-section">
+	 <section class="second-section">
 	 	<div class="wrapper">
 	 		<h1>WHAT CAN WE DO FOR YOU?</h1>
 	 		<ul>
-	 			<li class ="solutions-list" id="business"><a href="#">Business Stimulating Analytics</a></li>
-	 			<li class ="solutions-list" id="customer-experience"><a href="#">Digital Customer Experience</</a></li>
-	 			<li class ="solutions-list" id="smart-monetization"><a href="#">Smart Monetization</a></li>
-	 			<li class ="solutions-list" id="optimization-efficiency"><a href="#">Optimization and Efficiency</a></li>
-	 			<li class ="solutions-list" id="choice-control"><a href="#">Personalized Choice &amp; Control</a></li>
-	 			<li class ="solutions-list" id="business-transformation"><a href="#">Business Transformation</a></li>
+	 			<li class ="solutions-list business"><a href="#">Business Stimulating Analytics</a></li>
+	 			<li class ="solutions-list customer-experience"><a href="#">Digital Customer Experience</</a></li>
+	 			<li class ="solutions-list smart-monetization"><a href="#">Smart Monetization</a></li>
+	 			<li class ="solutions-list optimization-efficiency"><a href="#">Optimization and Efficiency</a></li>
+	 			<li class ="solutions-list choice-control"><a href="#">Personalized Choice &amp; Control</a></li>
+	 			<li class ="solutions-list business-transformation"><a href="#">Business Transformation</a></li>
 	 		</ul>
 	 		<button class="sol-btn">See all of our solutions<img class="learnMoreArrow" src="img/btnArrow.png" alt="arrow button"></button>
 		</div>
 	 </section>
 
-	 <section id="third-section">
+	 <section class="third-section">
 	 	<div class="wrapper">
 	 		<h1>WHAT'S HAPPENING AT COMVERSE?</h1>
 	 		<ul>
@@ -137,12 +139,12 @@
 	 	</div>
 	 </section>
 
-	 <section id="success-stories-section">
+	 <section class="success-stories-section">
 	 	<div class="wrapper">
 	 	<h1>SUCCESS STORIES</h1>
 	 	<ul class="success-stories-list">
 	 		<li class="success-stories-left">
-	 			<blockquote>
+	 			<blockquote class="success-stories-blockquote">
 	 				<img class="person-img" src="img/person2.png" alt="person">
 	 				<p>
 	 					<img class="quote" src="img/quote-grey.png" alt="quote">
@@ -180,7 +182,7 @@
 	 					<img src="img/trilogy.png" alt="trilogy">
 	 				</div>
 	 			</div>
-	 			<blockquote>
+	 			<blockquote class="success-stories-blockquote">
 	 				<img class="person-img" src="img/person1.png" alt="person">
 	 				<p>
 	 					Comverse has demonstrated that they are partners, not just suppliers, because they understand our needs, our situations; together we are...
@@ -195,7 +197,7 @@
 	 			</blockquote>
 	 		</li>
 	 		<li class="success-stories-right">
-	 			<blockquote>
+	 			<blockquote class="success-stories-blockquote right-blockquote">
 	 				<p>
 	 					<img class="quote" src="img/quote-grey.png" alt="quote">
 	 					Comverse has been able to fully deliver what we want and we have peers...
@@ -220,6 +222,9 @@
 	 	</ul>
 	 	<button class="success-stories-btn">All 256 Success Stories<img class="learnMoreArrow" src="img/btnArrow.png" alt="arrow button">
 	 	</button>
+	 	<a href="#" class="scroll-to-top">
+	 		<img src="img/back_top.png">
+	 	</a>
 	 	</div>
 	 </section>
 	 <footer>
@@ -279,7 +284,7 @@
 	 			</div>
 	 			<form>
 	 				<h3 class="f-box-header">SUBSCRIBE TO COMVERSE</h3>
-	 				<input type="email" placeholder="email" class="email" maxlength="25">
+	 				<input type="email" placeholder="email" class="email">
 	 				<input type="submit" value="SIGN UP" class="sign-up">
 	 			</form>
 	 			<div class="social-icons">

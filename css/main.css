@@ -64,8 +64,8 @@ ul{
 }
 
 .devider{
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+    padding-right: 10px;
 }
 
  ol {
@@ -78,38 +78,49 @@ ol > a{
 	color: black;
 }
 
-#comverse-logo{
+.comverse-logo{
 	float: left;
 }
 
 .search-box{
 	border-radius: 7px;
-	width: 128px;
+    width: 128px;
+    border: none;
+    outline: none;
+    padding: 3px;
 }
 .search-form{
 	float: right;
-	padding-top: 20px;
+	border: 1px solid #D2D2D2;
+	height: 22px;
+	margin-top: 17px;
+	border-radius: 7px;
+}
+
+.search-form > img{
+    position: absolute;
+    padding: 0;
 }
 
 .search-form button{
 	border: none;
 	background-color: transparent;
 	position: relative;
-	right: 28px;
-	top: 1px;
+    top: 2px;
+    outline: none;
 }
 /**********************End - header style **************************/
 
 /********************** first section style **************************/
-#first-section{
+.first-section{
 	background: url(../img/slide-bg-complexity.jpg) no-repeat center center fixed;
-	height: 540px;
+	height: 550px;
 	width: 100%;
 		
 	color: white;
 }
 
-#first-h1{
+.first-h1{
 	padding-top: 80px;
 }
 
@@ -165,6 +176,9 @@ h2{
 	float: right;
 }
 
+.selected{
+	background-color: #2E95CA !important;
+}
 .carousel > a > li {
 	width: 5px;
 	height: 5px;
@@ -208,14 +222,14 @@ h2{
 }
 
 /**/
-#second-section{
+.second-section{
 	background-color: #50AED0;
 	width: 100%;
 	height: 350px;
 	text-align: center;
 }
 
-#second-section > div > h1, #third-section > div > h1, #success-stories-section > div > h1{
+.second-section > div > h1, .third-section > div > h1, .success-stories-section > div > h1{
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	color: white;
@@ -228,13 +242,13 @@ a{
 	text-decoration: none;
 }
 
-#second-section > div > ul > li > a{
+.second-section > div > ul > li > a{
 	color: white;
 	position: relative;
 	top: 50px;
 }
 
-#second-section > div > ul > li{
+.second-section > div > ul > li{
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -245,47 +259,46 @@ a{
 	padding-top: 30px;
 }
 
-#business{
+.business{
 	background-image: url(../img/solution_icon_biz-analitics.png);
 }
-
-#customer-experience{
+.customer-experience{
 	background-image: url(../img/solution_icon_diti-cx.png);
 }
-#smart-monetization{
+.smart-monetization{
 	background-image: url(../img/solution_icon_smart-money.png);
 }
-#optimization-efficiency{
+.optimization-efficiency{
 	background-image: url(../img/solution_icon_optimize-efficnt.png);
 }
-#choice-control{
+.choice-control{
 	background-image: url(../img/solution_icon_personal.png);
 }
-#business-transformation{
+.business-transformation{
 	background-image: url(../img/solution_icon_biz-transform.png);
 }
 
-#business:hover{
+.business:hover{
 	background-image: url(../img/solution_icon_biz-analitics_hover.png);
 }
 
-#customer-experience:hover{
+.customer-experience:hover{
 	background-image: url(../img/solution_icon_diti-cx_hover.png);
 }
-#smart-monetization:hover{
+.smart-monetization:hover{
 	background-image: url(../img/solution_icon_smart-money_hover.png);
 }
-#optimization-efficiency:hover{
+.optimization-efficiency:hover{
 	background-image: url(../img/solution_icon_optimize-efficnt_hover.png);
 }
-#choice-control:hover{
+.choice-control:hover{
 	background-image: url(../img/solution_icon_personal_hover.png);
 }
-#business-transformation:hover{
+.business-transformation:hover{
 	background-image: url(../img/solution_icon_biz-transform_hover.png);
 }
 
-#third-section{
+.third-section{
 	background: url(../img/news-and-events-bg.jpg) no-repeat center center fixed;
 	width: 100%;
 	height: 350px;
@@ -400,7 +413,7 @@ h1.events-date{
 	color: black;
 }
 
-#success-stories-section{
+.success-stories-section{
 	background-color: #ECECEC;
 	width: 100%;
 	height: 500px;
@@ -408,11 +421,13 @@ h1.events-date{
 	background-size: cover;
 }
 
-#success-stories-section > div > ul{
+.success-stories-section > div > ul{
+
 	float: left;
 	padding: 0;
 }
-#success-stories-section > div > h1{
+
+.success-stories-section > div > h1{
 	color: #565656;
 	padding-bottom: 0;
 }
@@ -519,6 +534,48 @@ blockquote > span{
 	width: 102%;
 }
 
+.success-stories-blockquote:before{
+	 background: #3398CC url("../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg") center center no-repeat;
+    content: "";
+    width: 26%; /*350px*/
+    height: 0;
+    transition: height 0.4s ease-in;
+    display: block;
+    position: absolute;
+}
+
+.right-blockquote:before{
+	width: 15.1% !important; 
+}
+
+.success-stories-blockquote:hover:before{
+	height: 180px;
+}
+
+.company-logo:before{
+	 background: #3398CC url("../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg") center center no-repeat;
+    content: "";
+    width: 8.3%;
+    height: 0;
+    transition: height 0.4s ease-in;
+    display: block;
+    position: absolute;
+}
+
+.company-logo:hover:before{
+	height: 98px;
+}
+
+.right-company-logo:before{
+	width: 7.1% !important;
+}
+
+.scroll-to-top{
+    position: absolute;
+    left: 332px;
+    margin-top: 29px;
+}
+
 footer{
 	height: 350px;
 	background-color: #1E1E1E;
@@ -612,7 +669,7 @@ footer{
 }
 
 .email{
-    width: 200px;
+    width: 170px;
     line-height: 2.5em;
     border-radius: 3px;
     border: none;
@@ -620,6 +677,7 @@ footer{
     padding-left: 8px;
     color: gray;
     outline: none;
+    padding-right: 8px;
 }
 
 .sign-up{
@@ -628,8 +686,8 @@ footer{
     border: none;
     color: white;
     line-height: 2.4em;
-    margin-left: -27px;
-    padding: 2px 10px;
+    margin-left: -8px;
+    padding: 2px 6px;
     position: absolute;
     cursor: pointer;
 }
@@ -698,4 +756,9 @@ footer{
 
 .f-nav-list > li > a:hover{
 	text-decoration: underline;
+}
+
+/********************************************* Responsive Design*********************************************/
+html{
+	font-size: 100%;
 }
