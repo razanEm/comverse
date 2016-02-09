@@ -116,6 +116,7 @@ ol > a{
 	background: url(../img/slide-bg-complexity.jpg) no-repeat center center fixed;
 	height: 550px;
 	width: 100%;
+	margin: 0 auto; /*rania*/
 		
 	color: white;
 }
@@ -756,6 +757,65 @@ footer{
 
 .f-nav-list > li > a:hover{
 	text-decoration: underline;
+}
+
+/* **********************************************
+  MEDIA QUERIES 
+************************************************* */
+@media all and (max-width: 1004px) and (min-width: 768px) {
+  .wrapper{
+  	padding: 0;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .comverse-logo > img{
+    width: 95px;
+    height: 32px;
+  }
+  .comverse-logo{
+    padding: 30px 5px;
+
+  }
+  nav{
+	font-size: 10px;
+}
+  .search-form{
+  	float: right;
+    display: inline-block;
+    position: relative;
+    border:none;
+ 
+  }
+.search-box{
+	border: 2px solid #a1a1a1;
+    border-radius: 5px;
+    margin: 0;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    width: 148px;
+}
+.section1-boxes{
+	width: 200px;
+	cursor: pointer;
+	margin-right: 20px;
+	padding: 10px 15px;
+}
+.section1-boxes h2{
+	font-size: 18px;
+}
+.left h2{
+	margin-bottom: 60px;
+}
+.middle h2{
+	margin-bottom: 20px;
+}
+.right h2{
+	margin-bottom: 60px;
+}
+.section1-boxes a{
+	float: bottom;
+
 }
 
 /********************************************* Responsive Design*********************************************/
