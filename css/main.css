@@ -15,9 +15,14 @@ header{
 	background: white;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 	z-index: 1;
+	height: auto;
 }
 
 .mobile-navigation{
+	display: none;
+}
+
+.mobile-search-textbox{
 	display: none;
 }
 
@@ -66,6 +71,7 @@ ul{
 .wrapper{
     width: 940px;
 	margin: 0 auto;
+	height: 100%;
 }
 
 .devider{
@@ -119,10 +125,9 @@ ol > a{
 /********************** first section style **************************/
 .first-section{
 	background: url(../img/slide-bg-complexity.jpg) no-repeat center center fixed;
-	height: 550px;
+	height: 575px;
 	width: 100%;
-	margin: 0 auto; /*rania*/
-		
+	margin: 0 auto;
 	color: white;
 }
 
@@ -169,10 +174,16 @@ h2{
 	border: none;
 	text-align: left;
 }
+
 .sol-btn{
-	position: relative;
 	top: 65px;
+    margin-bottom: 25px;
 }
+
+.second-section > div > ul{
+	margin-bottom: 70px;
+}
+
 .learn-btn:hover,.sol-btn:hover, .success-stories-btn:hover{
 	background-color: #63B8EE;
 	cursor: pointer;
@@ -192,6 +203,7 @@ h2{
 	padding: 3px;
 	border-radius: 2px;
 	margin-left: 5px;
+	font-size: 0;
 }
 
 .carousel > a > li:hover{
@@ -231,7 +243,7 @@ h2{
 .second-section{
 	background-color: #50AED0;
 	width: 100%;
-	height: 350px;
+	/*height: 350px;*/
 	text-align: center;
 }
 
@@ -241,7 +253,7 @@ h2{
 	color: white;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	font-size: 2.5em;
+	font-size: 2.4em;
 }
 
 a{
@@ -257,6 +269,7 @@ a{
 .second-section > div > ul > li{
 	padding-left: 10px;
 	padding-right: 10px;
+	display: inline-block;
 }
 
 .solutions-list{
@@ -578,7 +591,7 @@ blockquote > span{
 
 .scroll-to-top{
     position: relative;
-    top: 30px;
+    top: 33px;
     float: left;
     left: 13%;
 }
@@ -765,8 +778,21 @@ footer{
 	text-decoration: underline;
 }
 
+/* mobile */
+.mobile-navigation {
+    display: none;
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+.mobile-footer-list {
+    display: none;
+}
 /****************************************** MEDIA QUERIES ******************************************/
 @media all and (max-width: 1004px) and (min-width: 768px) {
+
   .wrapper{
   	padding: 0;
     max-width: 750px;
@@ -901,24 +927,344 @@ footer{
 	}
 }
 
-/*@media all and (max-width:768px) {
+@media all and (max-width:768px) {
+	.wrapper{
+		width: auto;
+		overflow: hidden;
+	}
 
 	nav, .login, .search-form{
 		display: none;
 	}
 
 	.comverse-logo{
-		margin: 0 auto;
-		float: none;
+	    float: none;
+	    margin: auto;
+	    display: block;
+	    margin-top:25px;
 	}
 
 	.comverse-logo > img {
 		width: 100px;
-	    display: block;
-	    margin: 0 auto;
 	    margin-top: 10px;
+	    float: none;
+	    margin: 0 auto;
+	    display: inherit;
 	}
 	.mobile-navigation{
 		display: block;
 	}
-}*/
+
+	label.mobile-nav {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        margin: 5px;
+        padding:5px;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
+
+	label {
+	   	display: block;
+	    border: 1px solid #d9d9d9;
+	    border-radius: 5px;
+	    text-decoration: none;
+	    background: linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
+	}
+
+	.burger-icon {
+        display: block;
+        background-color: #a0a0a0;
+        width: 30px;
+        height: 3px;
+        margin: 3px auto;
+    }
+
+    .burger-icon:not(:first-child) {
+        margin-top: 2px;
+    }
+
+    .main-nav-mobile {
+        display: none;
+        list-style: none;
+        text-transform: uppercase;
+        font: 1.2rem "Open Sans";
+        position: absolute;
+        left: 0;
+        top:0;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .mobile-search-textbox{
+    	width: 90%;
+	    margin: auto;
+	    margin-top: 15px;
+	    margin-bottom: 10px;
+	    height: 20px;
+	    border-radius: 7px;
+		border: 1px solid #D2D2D2;
+		outline: none;
+    }
+
+    header {
+	    height: 108px;
+    }
+
+    .main-nav-mobile ul {
+        list-style: none;
+        background: white;
+        padding: 0;
+    }
+
+    .main-nav-mobile li {
+        color: #333333;
+    }
+
+    .main-nav-mobile label {
+        width: 100%;
+        border-radius: 0;
+        background : #FFF;
+    }
+
+    .main-nav-mobile li a, .main-nav-mobile label {
+	    background-color: white;
+	    margin: 0;
+	    padding: 0 20px;
+	    height: 2rem;
+	    text-transform: uppercase;
+	    display: block;
+	    text-align: left;
+	    width: 100%;
+	    color: #585951;
+	    border-bottom: 1px solid #dbdbdb;
+	    border-top: 1px solid #fff;
+	    font: 14px Arial;
+	    text-decoration: none;
+	    line-height: 2.1rem;
+    }
+
+    input[type="checkbox"]:checked ~ ul {
+        display: block;
+        top:56px;
+    }
+
+    input[type="checkbox"]:checked ~ input{
+		display: block;
+    }
+    .mobile-search{
+	    float: right;
+	    height: 30px;
+	    width: 30px;
+	    position: absolute;
+	    top: 20px;
+	    right: 10px;
+	    margin: 5px;
+	    padding: 6px 3px 0px 3px;
+	    display: inline-block;
+	    background: url(../img/searchBtnMobile.png) no-repeat center;
+	    background-color: #e5e5e5;
+    }
+
+    #nav-mobile-search{
+    	
+    }
+
+    .first-section{
+    	height: 960px;
+    }
+
+    .boxes-list {
+    	display: block;
+    }
+
+    .section1-boxes{
+    	width: 100%;
+	    border-radius: 0;
+	    opacity: 1;
+	    margin: 0;
+	    margin-bottom: 10px;
+	    display: block;
+    }
+
+    .first-section-content{
+    	background-color: #2290C8;
+	    padding: 5px;
+	    margin-bottom: 10px;
+    }
+
+    .carousel{
+    	margin-bottom: 10px;
+    }
+
+    .carousel > a > li{
+    	width: 20px;
+    	height: 20px;
+    	font-size: 14px;
+    	text-align: center;
+    	color: #585951;
+    }
+
+    .second-section{
+    	/*height: 550px;*/
+    }
+
+    .solutions-list{
+    	width: 20%;
+    }
+
+    .second-section > div > ul{
+    	display: inline-block;
+    }
+
+    .second-section > div > ul > li{
+    	display: inline-block;
+    	padding-left: 0;
+    	padding-right: 0;
+    	margin: 35px;
+    }
+
+    .solutions-list{
+    	padding-top: 40px;
+    }
+
+    .third-section{
+    	height: 790px;
+    }
+
+    .events-list{
+    	display: block;
+    }
+
+    .comverse-events{
+    	width:100%;
+    	margin-bottom: 35px;
+    }
+
+    .comverse-events-box{
+    	width: auto;
+    }
+
+    .third-section > div > h1{
+    	padding-bottom: 0;
+     }
+
+    .news, .events{
+    	margin-right: 0;
+     }
+
+     .right-company-logo{
+     	width: 48%;
+     }
+
+     .success-stories-list{
+     	display: block;
+     	float: none !important;
+     }
+
+     .success-stories-section{
+     	height: 826px;
+     }
+
+     .success-stories-list > li{
+ 	    width: 330px;
+	    float: none;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+     }
+
+     .success-stories-right{
+     	display: none !important;
+     }
+     .scroll-to-top{
+     	top:50px;
+     	left: 6%;
+     	float: none;
+     }
+
+     .success-stories-blockquote:before{
+     	width: 330px;
+     }
+
+     .company-logo:before{
+     	width: 104px;
+     }
+
+     .f-links{
+     	display: none;
+     }
+
+     .f-box{
+     	display: none;
+     }
+
+     .mobile-footer-list {
+        display: block;
+        background-color: #2C2C2C;
+        margin-bottom: 16px;
+        margin: 0;
+        list-style: none;
+        padding-left: 0;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+
+
+    .mobile-footer-list li {
+        color:white;
+        padding-left: 20px;
+        border-bottom: 1px solid black;
+        padding: 10px 0 10px 10px;
+    }
+
+    .mobile-footer-list li:hover {
+        background-color: #cccccc;
+    }
+
+    .mobile-footer-list li > a {
+        color: #FFF;
+        text-decoration: none;
+        outline: none;
+    }
+
+    footer{
+    	height: auto;
+    }
+
+    .f-nav{
+	    margin-top: 0;
+	    padding: 10px 0 10px 10px;
+	    background-color: white;
+	    width: 100%;
+    }
+
+    .f-nav-list > li, .f-nav-list > li > a{
+    	color: black;
+    }
+
+    .social-icons{
+    	position: initial;
+    	float: right;
+    }
+}
+
+@media (max-width: 561px) {
+	.solutions-list{
+		width: 25%;
+	}
+
+	.second-section > div > ul > li{
+		display: inline-block;
+	    padding-left: 16px;
+	    padding-right: 0;
+	    margin: 3px;
+	    margin-bottom: 50px;
+	}
+}

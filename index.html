@@ -7,31 +7,39 @@
 <body>
 	<header>
 		<div class = "wrapper">
-		
-		<!-- Mobile Version Nav Button -->
-			<div class="mobile-navigation">
-				<img src="img/hamburger-icon.png" alt="hamburger icon">
-				<ul class="main-nav-mobile">
-					<li>
-						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-your-needs">
-						<label for="mobile-sub-your-needs">Your Needs</label>
-					</li>
-					<li>
-						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-our-portfolio">
-						<label for="mobile-sub-our-portfolio">Our Portfolio</label>
-					</li>
-					<li>
-						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-news-and-media">
-						<label for="mobile-sub-news-and-media">News &amp; Media</label>
-					</li>
-					<li>
-						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-about-comverse">
-						<label for="mobile-sub-about-comverse">About Comverse</label>
-					</li>
-				</ul>
-			</div>
 
+			<div class="mobile-navigation">
+			<label class="mobile-nav" for="nav-mobile-btn">
+				<span class="burger-icon"></span>
+				<span class="burger-icon"></span>
+				<span class="burger-icon"></span>
+				<span class="burger-icon"></span>
+			</label>
+			<input type="checkbox" id="nav-mobile-btn">
+
+			<ul class="main-nav-mobile">
+				<li>
+					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-your-needs">
+					<label for="mobile-sub-nav-your-needs">Your Needs</label>
+				</li>
+				<li>
+					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-our-portfolio">
+					<label for="mobile-sub-nav-our-portfolio">Our Portfolio</label>
+				</li>
+				<li>
+					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-news-and-media">
+					<label for="mobile-sub-nav-news-and-media">News &amp; Media</label>
+				</li>
+				<li>
+					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-about-comverse">
+					<label for="mobile-sub-nav-about-comverse">About Comverse</label>
+				</li>
+			</ul>
+			</div>
 			<a class="comverse-logo" href="#"><img src="img/comverse-logo.png" alt="Comverse logo"></a>
+			<label class="mobile-search" for="nav-mobile-search"></label>
+			<input type="checkbox" id="nav-mobile-search">
+			<input type="text" class="mobile-search-textbox">
 			<nav>
 				<ol>
 					<li><a href="#">YOUR NEEDS</a></li>
@@ -64,22 +72,23 @@
 	 
 	 <section class="first-section">
 	 	<div class="wrapper">
-	 		<ul></ul>
-	 		<h1 class="first-h1">
-	 		<strong>Free</strong> 
-	 		Your Markets From <br> IT <strong> Complexity</strong></h1>
-	 		<h3>Comverse Policy Studio <br>
-	 		1st Ever Marketing-Oriented Policy Tool</h3>
+		 	<div class="first-section-content">
+		 		<h1 class="first-h1">
+		 		<strong>Free</strong> 
+		 		Your Markets From <br> IT <strong> Complexity</strong></h1>
+		 		<h3>Comverse Policy Studio <br>
+		 		1st Ever Marketing-Oriented Policy Tool</h3>
+	 		</div>
 	 		<button class="learn-btn">LEARN MORE<img class="learnMoreArrow" src="img/btnArrow.png" alt="arrow button"></button>
 
 	 		<ol class="carousel">
-	 			<a href="#"><li class="selected"></li></a>
-	 			<a href="#"><li></li></a>
-	 			<a href="#"><li></li></a>
-	 			<a href="#"><li></li></a>
-	 			<a href="#"><li></li></a>
+	 			<a href="#"><li class="selected">1</li></a>
+	 			<a href="#"><li>2</li></a>
+	 			<a href="#"><li>3</li></a>
+	 			<a href="#"><li>4</li></a>
+	 			<a href="#"><li>5</li></a>
 	 		</ol>
-	 		<ul>
+	 		<ul class="boxes-list">
 		 		<li class="section1-boxes left">
 		 			<h2>Comverse Is Value-Added Service Global Market Leader.</h2>
 		 			<a class="more" href="#"><img src="img/link-icon-image.png" alt="link icon">Read more</a>
@@ -113,7 +122,7 @@
 	 <section class="third-section">
 	 	<div class="wrapper">
 	 		<h1>WHAT'S HAPPENING AT COMVERSE?</h1>
-	 		<ul>
+	 		<ul class="events-list">
 	 			<li class="comverse-events news">
 	 				<h2>NEWS</h2>
 	 				<a href="#">
@@ -291,6 +300,26 @@
 	 				</ul>
 	 			</div>
 	 		</div>
+
+	 		 <ul class="mobile-footer-list">
+				<a href="#">
+					<li>CONTACT US</li>
+				</a>
+				<a href="#">
+					<li>SUBSCRIBE TO COMVERSE NEWS</li>
+				</a>
+				<a href ="#">
+				<li>
+				VISIT US ON : 
+				<div class="social-icons">
+	 				<a href="#" class="youtube-icon"></a>
+	 				<a href="#" class="twitter-icon"></a>
+	 				<a href="#" class="linkedin-icon"></a>
+	 			</div>	
+				</li>
+				</a>
+			</ul>
+
 	 		<div class="f-box">
 	 			<div class="latest-blog-posts">
 	 				<h3 class="f-box-header">LATEST BLOG POSTS</h3>
