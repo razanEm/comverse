@@ -17,6 +17,10 @@ header{
 	z-index: 1;
 }
 
+.mobile-navigation{
+	display: none;
+}
+
 nav{
 	float: left;
 	position: relative;
@@ -56,6 +60,7 @@ ul{
 	display: inline-flex;
 	list-style-type: none;
 	float: right;
+	padding: 0px;
 }
 
 .wrapper{
@@ -538,7 +543,7 @@ blockquote > span{
 .success-stories-blockquote:before{
 	 background: #3398CC url("../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg") center center no-repeat;
     content: "";
-    width: 26%; /*350px*/
+    width: 351px; /*26.3%; */
     height: 0;
     transition: height 0.4s ease-in;
     display: block;
@@ -546,7 +551,7 @@ blockquote > span{
 }
 
 .right-blockquote:before{
-	width: 15.1% !important; 
+	width: 203px !important; 
 }
 
 .success-stories-blockquote:hover:before{
@@ -556,7 +561,7 @@ blockquote > span{
 .company-logo:before{
 	 background: #3398CC url("../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg") center center no-repeat;
     content: "";
-    width: 8.3%;
+    width: 110px; /*8.3%;*/
     height: 0;
     transition: height 0.4s ease-in;
     display: block;
@@ -568,13 +573,14 @@ blockquote > span{
 }
 
 .right-company-logo:before{
-	width: 7.1% !important;
+	width: 96px !important; /*7.1% !important;*/
 }
 
 .scroll-to-top{
-    position: absolute;
-    left: 332px;
-    margin-top: 29px;
+    position: relative;
+    top: 30px;
+    float: left;
+    left: 13%;
 }
 
 footer{
@@ -759,13 +765,11 @@ footer{
 	text-decoration: underline;
 }
 
-/* **********************************************
-  MEDIA QUERIES 
-************************************************* */
+/****************************************** MEDIA QUERIES ******************************************/
 @media all and (max-width: 1004px) and (min-width: 768px) {
   .wrapper{
   	padding: 0;
-    max-width: 768px;
+    max-width: 750px;
     margin: 0 auto;
   }
   .comverse-logo > img{
@@ -777,48 +781,144 @@ footer{
 
   }
   nav{
-	font-size: 10px;
-}
-  .search-form{
-  	float: right;
-    display: inline-block;
-    position: relative;
-    border:none;
- 
-  }
-.search-box{
-	border: 2px solid #a1a1a1;
-    border-radius: 5px;
-    margin: 0;
-    height: 18px;
-    display: inline-block;
-    position: relative;
-    width: 148px;
-}
-.section1-boxes{
-	width: 200px;
-	cursor: pointer;
-	margin-right: 20px;
-	padding: 10px 15px;
-}
-.section1-boxes h2{
-	font-size: 18px;
-}
-.left h2{
-	margin-bottom: 60px;
-}
-.middle h2{
-	margin-bottom: 20px;
-}
-.right h2{
-	margin-bottom: 60px;
-}
-.section1-boxes a{
-	float: bottom;
+	font-size: 11px;
+	}
+	.login > select, .login > a{
+		font-size: 12px;
+	}
+	.search-box{
+		border: none;
+	    border-radius: 7px;
+	    margin: 0;
+	    height: 14px;
+	    display: inline-block;
+	    position: relative;
+	    /*width: 148px;*/
+	}
+	.section1-boxes{
+		width: 200px;
+		cursor: pointer;
+		margin-right: 20px;
+		padding: 10px 15px;
+	}
+	.section1-boxes h2{
+		font-size: 18px;
+	}
+	.left h2{
+		margin-bottom: 60px;
+	}
+	.middle h2{
+		margin-bottom: 20px;
+	}
+	.right h2{
+		margin-bottom: 60px;
+	}
+	.section1-boxes a{
+		float: bottom;
+	}
+	.comverse-events{
+		width: 230px;
+	}
+	.comverse-events-box{
+		width: 225px;
+	}
 
+	.comverse-events > h2{
+		font-size: 20px;
+	}
+
+	.success-stories-left > blockquote > p, .success-stories-right > blockquote > p{
+		font-size: 14px;
+	}
+
+	.per-details{
+		font-size: 9px;
+	}
+
+	blockquote > p{
+		font-size: 13px;
+	}
+
+	.success-stories-blockquote:before{
+		width: 277px;
+	}
+
+	.right-blockquote:before {
+		width: 161px !important;
+	}
+
+	.company-logo{
+		width: 30%;
+	}
+
+	.company-logo:before{
+		width: 85px;
+	}
+
+	.right-company-logo{
+		width: 46%;
+	}
+
+	.right-company-logo:before{
+		width: 75px !important;
+	}
+
+	.per-logo > img{
+		width: 78px;
+	}
+
+	footer{
+		font-size: 12px;
+	}
+
+	.f-box{
+		width:201px;
+	}
+
+	.f-header{
+		font-size: 14px;
+	}
+
+	.f-links{
+		margin-right: 15px;
+	}
+
+	.latest-blog-posts-text{
+		font-size: 12px;
+	}
+
+	.f-box-header{
+		font-size: 1.2em;
+	}
+
+	.email{
+		margin: 0;
+		width: 125px;
+	}
+
+	.f-nav {
+		font-size: 12px;
+	}
 }
 
-/********************************************* Responsive Design*********************************************/
-html{
-	font-size: 100%;
-}
+/*@media all and (max-width:768px) {
+
+	nav, .login, .search-form{
+		display: none;
+	}
+
+	.comverse-logo{
+		margin: 0 auto;
+		float: none;
+	}
+
+	.comverse-logo > img {
+		width: 100px;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 10px;
+	}
+	.mobile-navigation{
+		display: block;
+	}
+}*/
