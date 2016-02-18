@@ -264,6 +264,7 @@ a{
 	color: white;
 	position: relative;
 	top: 50px;
+	cursor: pointer;
 }
 
 .second-section > div > ul > li{
