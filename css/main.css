@@ -26,6 +26,9 @@ header{
 	display: none;
 }
 
+.mobile-search{
+	color: transparent;
+}
 .hidden{
 	display: none !important;
 }
@@ -1074,6 +1077,7 @@ input[type=checkbox] {
 	    display: inline-block;
 	    background: url(../img/searchBtnMobile.png) no-repeat center;
 	    background-color: #e5e5e5;
+	    color: transparent;
     }
 
     #nav-mobile-search{
