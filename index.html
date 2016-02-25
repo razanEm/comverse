@@ -10,37 +10,39 @@
 		<div class = "wrapper">
 
 			<div class="mobile-navigation">
-			<label class="mobile-nav" for="nav-mobile-btn">
-				<span class="burger-icon"></span>
-				<span class="burger-icon"></span>
-				<span class="burger-icon"></span>
-				<span class="burger-icon"></span>
-			</label>
-			<input type="checkbox" id="nav-mobile-btn">
+				<label class="mobile-nav" for="nav-mobile-btn">
+					<span class="burger-icon"></span>
+					<span class="burger-icon"></span>
+					<span class="burger-icon"></span>
+					<span class="burger-icon"></span>
+				</label>
+				<label class"hidden" for="nav-mobile-btn">checkbox</label>
+				<input type="checkbox" id="nav-mobile-btn">
 
-			<ul class="main-nav-mobile">
-				<li>
-					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-your-needs">
-					<label for="mobile-sub-nav-your-needs">Your Needs</label>
-				</li>
-				<li>
-					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-our-portfolio">
-					<label for="mobile-sub-nav-our-portfolio">Our Portfolio</label>
-				</li>
-				<li>
-					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-news-and-media">
-					<label for="mobile-sub-nav-news-and-media">News &amp; Media</label>
-				</li>
-				<li>
-					<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-about-comverse">
-					<label for="mobile-sub-nav-about-comverse">About Comverse</label>
-				</li>
-			</ul>
+				<ul class="main-nav-mobile">
+					<li>
+						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-your-needs">
+						<label for="mobile-sub-nav-your-needs">Your Needs</label>
+					</li>
+					<li>
+						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-our-portfolio">
+						<label for="mobile-sub-nav-our-portfolio">Our Portfolio</label>
+					</li>
+					<li>
+						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-news-and-media">
+						<label for="mobile-sub-nav-news-and-media">News &amp; Media</label>
+					</li>
+					<li>
+						<input type="checkbox" class="mobile-sub-nav" id="mobile-sub-nav-about-comverse">
+						<label for="mobile-sub-nav-about-comverse">About Comverse</label>
+					</li>
+				</ul>
 			</div>
 			<a class="comverse-logo" href="#"><img src="img/comverse-logo.png" alt="Comverse logo"></a>
-			<label class="mobile-search" for="nav-mobile-search"></label>
+			<label class="mobile-search" for="nav-mobile-search" class="hidden">mobile search</label>
 			<input type="checkbox" id="nav-mobile-search">
-			<input type="text" class="mobile-search-textbox">
+			<label class="hidden" for="nav-mobile-search-textbox">search</label>
+			<input type="text" class="mobile-search-textbox" id="nav-mobile-search-textbox">
 			<nav>
 				<ol>
 					<li><a href="#">YOUR NEEDS</a></li>
@@ -62,7 +64,8 @@
 				<a href="#">Customer login</a>
 			</div>
 			<form class ="search-form" method="GET" action="http://www.google.com/search">
-				<input class="search-box" type="text"/>
+				<label class="hidden" for="search-textbox">search</label>
+				<input class="search-box" type="text" id="search-textbox"/>
 				<img class = "devider" src="img/divider.png" alt="divider">
 				<button type="submit">
 					<img src="img/searchBtn.png" alt="search button">
@@ -110,7 +113,7 @@
 	 		<h1>WHAT CAN WE DO FOR YOU?</h1>
 	 		<ul>
 	 			<li class ="solutions-list business"><a href="#">Business Stimulating Analytics</a></li>
-	 			<li class ="solutions-list customer-experience"><a href="#">Digital Customer Experience</</a></li>
+	 			<li class ="solutions-list customer-experience"><a href="#">Digital Customer Experience</a></li>
 	 			<li class ="solutions-list smart-monetization"><a href="#">Smart Monetization</a></li>
 	 			<li class ="solutions-list optimization-efficiency"><a href="#">Optimization and Efficiency</a></li>
 	 			<li class ="solutions-list choice-control"><a href="#">Personalized Choice &amp; Control</a></li>
@@ -338,8 +341,10 @@
 	 			</div>
 	 			<form  class="sign-up-form" method="GET" action="">
 	 				<h3 class="f-box-header">SUBSCRIBE TO COMVERSE</h3>
-	 				<input type="email" placeholder="email" class="email">
-	 				<input type="submit" value="SIGN UP" class="sign-up">
+	 				<label class="hidden" for="email-box">email box</label>
+	 				<input type="email" placeholder="email" class="email" id="email-box">
+	 				<label class="hidden" for="sign-up-btn">sign up button</label>
+	 				<input type="submit" value="SIGN UP" class="sign-up" id="sign-up-btn">
 	 			</form>
 	 			<div class="social-icons">
 	 				<a href="#" class="youtube-icon"></a>
